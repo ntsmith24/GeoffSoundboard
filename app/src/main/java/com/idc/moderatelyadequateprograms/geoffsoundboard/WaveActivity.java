@@ -1,5 +1,6 @@
 package com.idc.moderatelyadequateprograms.geoffsoundboard;
 
+import android.support.v7.app.AppCompatActivity;
 import android.content.Intent;
 import android.media.SoundPool;
 import android.os.Bundle;
@@ -9,8 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
-
+public class WaveActivity extends AppCompatActivity {
     private TextView mTextMessage;
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -20,25 +20,24 @@ public class MainActivity extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
                     mTextMessage.setText(R.string.title_home);
+                    Intent home = new Intent(WaveActivity.this, MainActivity.class);
+                    startActivity(home);
                     return true;
                 case R.id.navigation_dashboard:
                     mTextMessage.setText(R.string.wave);
-                    Intent wave = new Intent(MainActivity.this, WaveActivity.class);
-                    startActivity(wave);
                     return true;
             }
             return false;
         }
     };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        mTextMessage = (TextView) findViewById(R.id.message);
+        setContentView(R.layout.activity_wave);
+        mTextMessage = findViewById(R.id.textView);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
     }
-
-
 }
