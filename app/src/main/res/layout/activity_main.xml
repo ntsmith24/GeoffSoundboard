@@ -37,17 +37,10 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/hello"
+                android:id="@+id/goodMorning"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Hello"
-                android:textAppearance="@style/TextAppearance.AppCompat" />
-
-            <Button
-                android:id="@+id/myNameIsGeoffChallen"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="My Name Is Geoff Challen"
+                android:text="Good Morning"
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
@@ -58,10 +51,10 @@
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
-                android:id="@+id/goodMorning"
+                android:id="@+id/myNameIsGeoffChallen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Good Morning"
+                android:text="My Name Is Geoff Challen"
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
@@ -72,6 +65,13 @@
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
+                android:id="@+id/welcomeToUIUC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome to the University of Illinois"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
                 android:id="@+id/roundOfApplause"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -79,10 +79,11 @@
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
-                android:id="@+id/button7"
+                android:id="@+id/hello"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="Hello"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
                 android:id="@+id/button8"
