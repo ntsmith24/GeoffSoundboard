@@ -37,28 +37,28 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/hello"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Hello"
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/myNameIsGeoffChallen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="I'm Geoff Challen"
+                android:text="My Name Is Geoff Challen"
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/welcomeToCs125"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Welcome to CS 125!"
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/goodMorning"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Good Morning"
