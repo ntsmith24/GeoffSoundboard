@@ -3,7 +3,6 @@ package com.idc.moderatelyadequateprograms.geoffsoundboard;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -28,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         final MediaPlayer roundOfApplauseSound = MediaPlayer.create(this, R.raw.round_of_applause);
         final MediaPlayer welcomeToCollegeSound = MediaPlayer.create(this, R.raw.welcome_to_college);
         final MediaPlayer welcomeToUIUCSound = MediaPlayer.create(this, R.raw.welcome_to_uiuc);
+        final MediaPlayer alright1Sound = MediaPlayer.create(this, R.raw.alright);
 
         final Button goodMorning = (Button) this.findViewById(R.id.goodMorning);
         final Button welcomeToCs125 = (Button) this.findViewById(R.id.welcomeToCs125);
@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         final Button roundOfApplause = (Button) this.findViewById(R.id.roundOfApplause);
         final Button welcomeToCollege = (Button) this.findViewById(R.id.welcomeToCollege);
         final Button welcomeToUIUC = (Button) this.findViewById(R.id.welcomeToUIUC);
+        final Button alright = (Button) this.findViewById(R.id.alright);
 
         goodMorning.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,6 +71,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 welcomeToUIUCSound.start();
+            }
+        });
+        alright.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                alright1Sound.start();
             }
         });
         fab.setOnClickListener(new View.OnClickListener() {

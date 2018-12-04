@@ -86,10 +86,11 @@
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
-                android:id="@+id/button8"
+                android:id="@+id/alright"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="Alright 0"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
                 android:id="@+id/button9"
