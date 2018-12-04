@@ -3,4 +3,5 @@
     <string name="title_home">Home</string>
     <string name="wave">Wave</string>
     <string name="title_notifications">Notifications</string>
+    <string name="title_activity_wave">WaveActivity</string>
 </resources>
