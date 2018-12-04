@@ -24,10 +24,14 @@ public class MainActivity extends AppCompatActivity {
         final MediaPlayer goodMorningSound = MediaPlayer.create(this, R.raw.good_morning);
         final MediaPlayer welcomeToCs125Sound = MediaPlayer.create(this, R.raw.welcome_to_cs125);
         final MediaPlayer myNameIsGeoffITeachSound = MediaPlayer.create(this, R.raw.my_name_is_geoff_iteach);
+        final MediaPlayer roundOfApplauseSound = MediaPlayer.create(this, R.raw.round_of_applause);
+        final MediaPlayer welcomeToCollegeSound = MediaPlayer.create(this, R.raw.welcome_to_college);
 
         final Button goodMorning = (Button) this.findViewById(R.id.goodMorning);
         final Button welcomeToCs125 = (Button) this.findViewById(R.id.welcomeToCs125);
         final Button myNameIsGeoffChallen = (Button) this.findViewById(R.id.myNameIsGeoffChallen);
+        final Button roundOfApplause = (Button) this.findViewById(R.id.roundOfApplause);
+        final Button welcomeToCollege = (Button) this.findViewById(R.id.welcomeToCollege);
 
         goodMorning.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,7 +51,18 @@ public class MainActivity extends AppCompatActivity {
                 myNameIsGeoffITeachSound.start();
             }
         });
-        
+        roundOfApplause.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                roundOfApplauseSound.start();
+            }
+        });
+        welcomeToCollege.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                welcomeToCollegeSound.start();
+            }
+        });
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

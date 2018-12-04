@@ -65,17 +65,18 @@
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/welcomeToCollege"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Welcome to Your First College Class"
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
-                android:id="@+id/button6"
+                android:id="@+id/roundOfApplause"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="Round of Applause"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
                 android:id="@+id/button7"
