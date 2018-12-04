@@ -93,10 +93,11 @@
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
-                android:id="@+id/button9"
+                android:id="@+id/iSeeOnePerson"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="I See One Person"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
                 android:id="@+id/button10"
