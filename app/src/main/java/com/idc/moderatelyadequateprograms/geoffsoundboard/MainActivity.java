@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
         final Button goodMorning = this.findViewById(R.id.goodMorning);
         final Button welcomeToCs125 = this.findViewById(R.id.welcomeToCs125);
-        final Button myNameIsGeoffChallen = this.findViewById(R.id.myNameIsGeoffChallen);
+        final Button myNameIsGeoffChallenITeach = this.findViewById(R.id.myNameIsGeoffChallen);
         final Button roundOfApplause = this.findViewById(R.id.roundOfApplause);
         final Button welcomeToCollege = this.findViewById(R.id.welcomeToCollege);
         final Button welcomeToUIUC = this.findViewById(R.id.welcomeToUIUC);
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
                 welcomeToCs125Sound.start();
             }
         });
-        myNameIsGeoffChallen.setOnClickListener(new View.OnClickListener() {
+        myNameIsGeoffChallenITeach.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 myNameIsGeoffITeachSound.start();
