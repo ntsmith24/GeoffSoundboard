@@ -29,7 +29,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -79,17 +79,31 @@
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
-                android:id="@+id/hello"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Hello"
-                android:textAppearance="@style/TextAppearance.AppCompat" />
-
-            <Button
                 android:id="@+id/alright"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Alright 0"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
+                android:id="@+id/alright1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alright 1"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
+                android:id="@+id/alright2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alright 2"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
+                android:id="@+id/cool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cool"
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
@@ -100,16 +114,81 @@
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
-                android:id="@+id/button10"
+                android:id="@+id/spooky"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="Spooky"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
-                android:id="@+id/button11"
+                android:id="@+id/spookyMusic"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="Spooky Music"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
+                android:id="@+id/welcomeToHalloween"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome To Halloween"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
+                android:id="@+id/trees"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trees"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
+                android:id="@+id/nice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nice"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
+                android:id="@+id/so"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="So"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
+                android:id="@+id/ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OK"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
+                android:id="@+id/um0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Umm 0"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
+                android:id="@+id/um1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Umm 1"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
+                android:id="@+id/youKnow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You Know"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
+                android:id="@+id/today"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Today" />
+
         </LinearLayout>
     </ScrollView>
 
