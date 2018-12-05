@@ -187,7 +187,8 @@
                 android:id="@+id/today"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Today" />
+                android:text="Today"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
 
         </LinearLayout>
     </ScrollView>
