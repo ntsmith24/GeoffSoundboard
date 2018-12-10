@@ -44,6 +44,13 @@
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
+                android:id="@+id/welcomeBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome Back"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
                 android:id="@+id/welcomeToCs125"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -107,10 +114,24 @@
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
+                android:id="@+id/sweetOldDog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sweet Old Dog"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
                 android:id="@+id/dogsBarkLoudly"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Dogs Bark Loudly"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
+                android:id="@+id/xyz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Xyz"
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
@@ -132,6 +153,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Chuchu's actually a dog"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
+                android:id="@+id/sweetnessLevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sweetness Level"
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
@@ -205,6 +233,20 @@
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
+                android:id="@+id/youGuysAreDumb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You Guys are Dumb"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
+                android:id="@+id/whoCares"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Who Cares"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
                 android:id="@+id/java0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -230,6 +272,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Trees"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
+                android:id="@+id/polymorphism"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Polymorphism"
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
@@ -282,6 +331,13 @@
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
+                android:id="@+id/um2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Umm 2"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
                 android:id="@+id/youKnow"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -297,5 +353,11 @@
 
         </LinearLayout>
     </ScrollView>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="186dp" />
 
 </android.support.constraint.ConstraintLayout>

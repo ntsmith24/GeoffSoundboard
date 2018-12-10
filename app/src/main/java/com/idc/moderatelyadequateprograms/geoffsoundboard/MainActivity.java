@@ -3,7 +3,6 @@ package com.idc.moderatelyadequateprograms.geoffsoundboard;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -58,7 +57,14 @@ public class MainActivity extends AppCompatActivity {
         final MediaPlayer ok1Sound = MediaPlayer.create(this, R.raw.ok1);
         final MediaPlayer oldDogsSound = MediaPlayer.create(this, R.raw.old_dogs);
         final MediaPlayer petSound = MediaPlayer.create(this, R.raw.pet);
-
+        final MediaPlayer polySound = MediaPlayer.create(this, R.raw.polymorphism);
+        final MediaPlayer sweetOldDogSound = MediaPlayer.create(this, R.raw.sweet_old_dog);
+        final MediaPlayer sweetnessLevelSound = MediaPlayer.create(this, R.raw.sweetness_level);
+        final MediaPlayer um2Sound = MediaPlayer.create(this, R.raw.um2);
+        final MediaPlayer welcomeBackSound = MediaPlayer.create(this, R.raw.welcome_back);
+        final MediaPlayer whoCaresSound = MediaPlayer.create(this, R.raw.who_cares);
+        final MediaPlayer xyzSound = MediaPlayer.create(this, R.raw.xyz);
+        final MediaPlayer youGuysDumbSound = MediaPlayer.create(this, R.raw.you_guys_are_dumb);
         /*
         Buttons
          */
@@ -99,12 +105,68 @@ public class MainActivity extends AppCompatActivity {
         final Button ok1 = this.findViewById(R.id.ok1);
         final Button oldDogs = this.findViewById(R.id.oldDogs);
         final Button pet = this.findViewById(R.id.pet);
+        final Button polymorphism = this.findViewById(R.id.polymorphism);
+        final Button sweetOldDog = this.findViewById(R.id.sweetOldDog);
+        final Button sweetnessLevel = this.findViewById(R.id.sweetnessLevel);
+        final Button um2 = this.findViewById(R.id.um2);
+        final Button welcomeBack = this.findViewById(R.id.welcomeBack);
+        final Button whoCares = this.findViewById(R.id.whoCares);
+        final Button xyz = this.findViewById(R.id.xyz);
+        final Button youGuysDumb = this.findViewById(R.id.youGuysAreDumb);
 
         FloatingActionButton fab =  findViewById(R.id.wave);
 
         /*
         Button Listeners
          */
+        youGuysDumb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                youGuysDumbSound.start();
+            }
+        });
+        xyz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                xyzSound.start();
+            }
+        });
+        whoCares.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                whoCaresSound.start();
+            }
+        });
+        welcomeBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                welcomeBackSound.start();
+            }
+        });
+        um2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                um2Sound.start();
+            }
+        });
+        sweetnessLevel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sweetnessLevelSound.start();
+            }
+        });
+        sweetOldDog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sweetOldDogSound.start();
+            }
+        });
+        polymorphism.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                polySound.start();
+            }
+        });
         pet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
