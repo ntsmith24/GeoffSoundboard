@@ -3,6 +3,7 @@ package com.idc.moderatelyadequateprograms.geoffsoundboard;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -17,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //mTextMessage = findViewById(R.id.message);
-        FloatingActionButton fab =  findViewById(R.id.wave);
         /*
         Sound events
          */
@@ -43,7 +43,25 @@ public class MainActivity extends AppCompatActivity {
         final MediaPlayer um1Sound = MediaPlayer.create(this, R.raw.um1);
         final MediaPlayer youKnowSound = MediaPlayer.create(this, R.raw.you_know);
         final MediaPlayer todaySound = MediaPlayer.create(this, R.raw.today);
+        final MediaPlayer alright3Sound = MediaPlayer.create(this, R.raw.alright3);
+        final MediaPlayer chuchu0Sound = MediaPlayer.create(this, R.raw.chuchu);
+        final MediaPlayer chuchu1Sound = MediaPlayer.create(this, R.raw.chuchu1);
+        final MediaPlayer chuchusADogSound = MediaPlayer.create(this, R.raw.chuchus_actually_a_dog);
+        final MediaPlayer cs125Sound = MediaPlayer.create(this, R.raw.cs_125);
+        final MediaPlayer determinesHowSweetSound = MediaPlayer.create(this, R.raw.determines_how_sweet_the_dog_is);
+        final MediaPlayer dogSound = MediaPlayer.create(this, R.raw.dog);
+        final MediaPlayer dogsBarkLoudlySound = MediaPlayer.create(this, R.raw.dogs_bark_loudly);
+        final MediaPlayer hashingSound = MediaPlayer.create(this, R.raw.hashing);
+        final MediaPlayer intellijSound = MediaPlayer.create(this, R.raw.intellij);
+        final MediaPlayer java0Sound = MediaPlayer.create(this, R.raw.java);
+        final MediaPlayer java1Sound = MediaPlayer.create(this, R.raw.java1);
+        final MediaPlayer ok1Sound = MediaPlayer.create(this, R.raw.ok1);
+        final MediaPlayer oldDogsSound = MediaPlayer.create(this, R.raw.old_dogs);
+        final MediaPlayer petSound = MediaPlayer.create(this, R.raw.pet);
 
+        /*
+        Buttons
+         */
         final Button goodMorning = this.findViewById(R.id.goodMorning);
         final Button welcomeToCs125 = this.findViewById(R.id.welcomeToCs125);
         final Button myNameIsGeoffChallenITeach = this.findViewById(R.id.myNameIsGeoffChallen);
@@ -66,7 +84,69 @@ public class MainActivity extends AppCompatActivity {
         final Button um1 = this.findViewById(R.id.um1);
         final Button youKnow = this.findViewById(R.id.youKnow);
         final Button today = this.findViewById(R.id.today);
+        final Button alright3 = this.findViewById(R.id.alright3);
+        final Button chuchu0 = this.findViewById(R.id.chuchu0);
+        final Button chuchu1 = this.findViewById(R.id.chuchu1);
+        final Button chuchuIsDog = this.findViewById(R.id.chuchuIsDog);
+        final Button cs125 = this.findViewById(R.id.cs125);
+        final Button determinesHowSweet = this.findViewById(R.id.determinesSweet);
+        final Button dog = this.findViewById(R.id.dog);
+        final Button dogsBarkLoudly = this.findViewById(R.id.dogsBarkLoudly);
+        final Button hashing = this.findViewById(R.id.hashing);
+        final Button intellij = this.findViewById(R.id.intellij);
+        final Button java0 = this.findViewById(R.id.java0);
+        final Button java1 = this.findViewById(R.id.java1);
+        final Button ok1 = this.findViewById(R.id.ok1);
+        final Button oldDogs = this.findViewById(R.id.oldDogs);
+        final Button pet = this.findViewById(R.id.pet);
 
+        FloatingActionButton fab =  findViewById(R.id.wave);
+
+        /*
+        Button Listeners
+         */
+        pet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                petSound.start();
+            }
+        });
+        oldDogs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                oldDogsSound.start();
+            }
+        });
+        ok1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ok1Sound.start();
+            }
+        });
+        java1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                java1Sound.start();
+            }
+        });
+        java0.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                java0Sound.start();
+            }
+        });
+        intellij.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intellijSound.start();
+            }
+        });
+        hashing.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                hashingSound.start();
+            }
+        });
         goodMorning.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -199,6 +279,59 @@ public class MainActivity extends AppCompatActivity {
                 todaySound.start();
             }
         });
+        alright3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                alright3Sound.start();
+            }
+        });
+        chuchu0.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                chuchu0Sound.start();
+            }
+        });
+        chuchu1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                chuchu1Sound.start();
+            }
+        });
+        chuchuIsDog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                chuchusADogSound.start();
+            }
+        });
+        cs125.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cs125Sound.start();
+            }
+        });
+        determinesHowSweet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                determinesHowSweetSound.start();
+            }
+        });
+        dog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dogSound.start();
+            }
+        });
+        dogsBarkLoudly.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dogsBarkLoudlySound.start();
+            }
+        });
+
+
+
+
+
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override

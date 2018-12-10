@@ -51,6 +51,13 @@
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
+                android:id="@+id/cs125"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CS 125"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
                 android:id="@+id/myNameIsGeoffChallen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -79,6 +86,62 @@
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
+                android:id="@+id/pet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pet"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
+                android:id="@+id/dog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dog"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
+                android:id="@+id/oldDogs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Old Dogs"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
+                android:id="@+id/dogsBarkLoudly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dogs Bark Loudly"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
+                android:id="@+id/chuchu0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chuchu 0"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
+                android:id="@+id/chuchu1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chuchu 1"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
+                android:id="@+id/chuchuIsDog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chuchu's actually a dog"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
+                android:id="@+id/determinesSweet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Determines how sweet the dog actually is"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
                 android:id="@+id/alright"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -97,6 +160,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Alright 2"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
+                android:id="@+id/alright3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alright 3"
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
@@ -135,10 +205,38 @@
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
+                android:id="@+id/java0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Java 0"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
+                android:id="@+id/java1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Java 1"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
+                android:id="@+id/intellij"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="IntelliJ"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
                 android:id="@+id/trees"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Trees"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
+                android:id="@+id/hashing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hashing"
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
@@ -159,7 +257,14 @@
                 android:id="@+id/ok"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="OK"
+                android:text="OK 0"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
+                android:id="@+id/ok1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OK 1"
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
