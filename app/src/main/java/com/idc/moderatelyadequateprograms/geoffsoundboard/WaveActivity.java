@@ -19,10 +19,10 @@ public class WaveActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wave);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.home);
+        FloatingActionButton fab = findViewById(R.id.home);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -31,11 +31,14 @@ public class WaveActivity extends AppCompatActivity {
         });
 
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
-        sensorManager.registerListener(sensorListener, sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER), SensorManager.SENSOR_DELAY_NORMAL);
+        sensorManager.registerListener(sensorListener,
+                sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER),
+                SensorManager.SENSOR_DELAY_NORMAL);
+
         accel = 0.00f;
         accelCurrent = SensorManager.GRAVITY_EARTH;
         accelLast = SensorManager.GRAVITY_EARTH;
-        handler.post(runnableCode);
+        handler.post(runnable);
     }
 
     Handler handler = new Handler();
@@ -44,7 +47,7 @@ public class WaveActivity extends AppCompatActivity {
         morning.start();
     }
 
-    private Runnable runnableCode = new Runnable() {
+    private Runnable runnable = new Runnable() {
         @Override
         public void run() {
             if (accel > 1) {
@@ -77,13 +80,15 @@ public class WaveActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        handler.post(runnableCode);
-        sensorManager.registerListener(sensorListener, sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER), SensorManager.SENSOR_DELAY_NORMAL);
+        handler.post(runnable);
+        sensorManager.registerListener(sensorListener,
+                sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER),
+                SensorManager.SENSOR_DELAY_NORMAL);
     }
 
     @Override
     protected void onPause() {
-        handler.removeCallbacks(runnableCode);
+        handler.removeCallbacks(runnable);
         sensorManager.unregisterListener(sensorListener);
         super.onPause();
     }
