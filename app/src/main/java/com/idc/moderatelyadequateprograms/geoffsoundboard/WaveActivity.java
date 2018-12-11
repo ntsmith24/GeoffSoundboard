@@ -61,6 +61,7 @@ public class WaveActivity extends AppCompatActivity {
     private float accel;
     private float accelCurrent;
     private float accelLast;
+    private float sensorSensitivity = 0.9f;
 
     private final SensorEventListener sensorListener = new SensorEventListener() {
         public void onSensorChanged(SensorEvent sens) {
@@ -70,7 +71,7 @@ public class WaveActivity extends AppCompatActivity {
             accelLast = accelCurrent;
             accelCurrent = (float) Math.sqrt((double) (x*x + y*y + z*z));
             float newAccel = accelCurrent - accelLast;
-            accel = accel * 0.9f + newAccel;
+            accel = accel * sensorSensitivity + newAccel;
         }
 
         public void onAccuracyChanged(Sensor sensor, int accuracy) {
