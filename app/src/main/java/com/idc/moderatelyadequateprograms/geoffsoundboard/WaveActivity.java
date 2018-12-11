@@ -22,7 +22,6 @@ public class WaveActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.home);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,8 +30,8 @@ public class WaveActivity extends AppCompatActivity {
             }
         });
 
-        mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
-        mSensorManager.registerListener(mSensorListener, mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER), SensorManager.SENSOR_DELAY_NORMAL);
+        sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+        sensorManager.registerListener(sensorListener, sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER), SensorManager.SENSOR_DELAY_NORMAL);
         accel = 0.00f;
         accelCurrent = SensorManager.GRAVITY_EARTH;
         accelLast = SensorManager.GRAVITY_EARTH;
@@ -48,31 +47,27 @@ public class WaveActivity extends AppCompatActivity {
     private Runnable runnableCode = new Runnable() {
         @Override
         public void run() {
-
             if (accel > 1) {
                 sound();
             }
-
             handler.postDelayed(this, 500);
         }
     };
 
+    private SensorManager sensorManager;
+    private float accel;
+    private float accelCurrent;
+    private float accelLast;
 
-    private SensorManager mSensorManager;
-    private float accel; // acceleration apart from gravity
-    private float accelCurrent; // current acceleration including gravity
-    private float accelLast; // last acceleration including gravity
-
-    private final SensorEventListener mSensorListener = new SensorEventListener() {
-
+    private final SensorEventListener sensorListener = new SensorEventListener() {
         public void onSensorChanged(SensorEvent sens) {
             float x = sens.values[0];
             float y = sens.values[1];
             float z = sens.values[2];
             accelLast = accelCurrent;
             accelCurrent = (float) Math.sqrt((double) (x*x + y*y + z*z));
-            float delta = accelCurrent - accelLast;
-            accel = accel * 0.9f + delta;
+            float newAccel = accelCurrent - accelLast;
+            accel = accel * 0.9f + newAccel;
         }
 
         public void onAccuracyChanged(Sensor sensor, int accuracy) {
@@ -83,13 +78,13 @@ public class WaveActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         handler.post(runnableCode);
-        mSensorManager.registerListener(mSensorListener, mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER), SensorManager.SENSOR_DELAY_NORMAL);
+        sensorManager.registerListener(sensorListener, sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER), SensorManager.SENSOR_DELAY_NORMAL);
     }
 
     @Override
     protected void onPause() {
         handler.removeCallbacks(runnableCode);
-        mSensorManager.unregisterListener(mSensorListener);
+        sensorManager.unregisterListener(sensorListener);
         super.onPause();
     }
 
