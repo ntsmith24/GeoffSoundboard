@@ -13,6 +13,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 //import android.util.Log;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 public class WaveActivity extends AppCompatActivity {
     @Override
@@ -39,12 +41,19 @@ public class WaveActivity extends AppCompatActivity {
         accelCurrent = SensorManager.GRAVITY_EARTH;
         accelLast = SensorManager.GRAVITY_EARTH;
         handler.post(runnable);
+        final ImageButton geoff = this.findViewById(R.id.imageButton);
+        geoff.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sound();
+            }
+        });
     }
 
     Handler handler = new Handler();
     public void sound() {
-        final MediaPlayer morning = MediaPlayer.create(this, R.raw.good_morning);
-        morning.start();
+        final MediaPlayer hi = MediaPlayer.create(this, R.raw.hi_its_geoff);
+        hi.start();
     }
 
     private Runnable runnable = new Runnable() {
