@@ -5,24 +5,23 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
-import android.widget.Toast;
-import android.os.Handler;
 
 public class WaveActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wave);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.home);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -37,18 +36,21 @@ public class WaveActivity extends AppCompatActivity {
         accel = 0.00f;
         accelCurrent = SensorManager.GRAVITY_EARTH;
         accelLast = SensorManager.GRAVITY_EARTH;
-
         handler.post(runnableCode);
     }
 
     Handler handler = new Handler();
+    public void sound() {
+        final MediaPlayer morning = MediaPlayer.create(this, R.raw.good_morning);
+        morning.start();
+    }
 
     private Runnable runnableCode = new Runnable() {
         @Override
         public void run() {
 
-            if (accel > 2) {
-                Log.i("SHAKE", "SHOOKETH");
+            if (accel > 1) {
+                sound();
             }
 
             handler.postDelayed(this, 500);

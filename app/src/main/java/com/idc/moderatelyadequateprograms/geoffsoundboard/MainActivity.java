@@ -389,12 +389,6 @@ public class MainActivity extends AppCompatActivity {
                 dogsBarkLoudlySound.start();
             }
         });
-
-
-
-
-
-
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -402,9 +396,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
-
-
-
-
 }
